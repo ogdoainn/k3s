@@ -1,0 +1,410 @@
+/** start common styles */
+@import url("https://fonts.cdnfonts.com/css/times-new-roman");
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.aligns-center {
+  align-items: center;
+}
+
+.aligns-start {
+  align-items: start;
+}
+
+.aligns-end {
+  align-items: end;
+}
+
+.aligns-stretch {
+  align-items: stretch;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.tct {
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+}
+
+/** end common styles */
+@font-face {
+  font-family: "digit";
+  src: url(font/ds-digit.ttf);
+}
+.time-roman {
+  font-family: "Times New Roman", sans-serif;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  45% {
+    transform: rotate(4deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(0deg);
+  }
+  92% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes z00m2 {
+  0% {
+    transform: scale(1);
+  }
+  12.5% {
+    transform: scale(1.05);
+  }
+  25% {
+    transform: scale(1);
+  }
+  37.5% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #393939;
+}
+
+.main-container {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(imgs/BJ.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.abl {
+  display: block;
+}
+
+.dlx {
+  width: 220px;
+  margin: 12px auto;
+  animation: z00m2 1.4s infinite ease-in;
+}
+.dlx img {
+  width: 100%;
+}
+
+.navbar {
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 77;
+  background-color: #393939;
+}
+
+.app-logo {
+  width: 100%;
+}
+.app-logo img {
+  width: 30%;
+}
+
+.suppoter {
+  animation: z00m2 1.4s infinite ease-in;
+}
+.suppoter img {
+  width: 84px;
+}
+
+.dn-name {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.hd0cis {
+  transform-origin: center 45%;
+  animation: shaking 1.5s infinite ease-in;
+}
+
+.intro {
+  font-size: 17px;
+  color: #dbd41b;
+}
+
+.pvb {
+  color: #fff;
+  border: 1px solid #dbd41b;
+  background: rgb(219, 122, 27);
+  background: linear-gradient(0deg, rgb(219, 122, 27) 0%, rgb(205, 1, 0) 100%);
+  margin-left: 6px;
+  margin-top: 12px;
+  padding: 3px;
+}
+.pvb:first-child {
+  margin-left: 0;
+}
+
+.k-point-b {
+  font-size: 9px;
+}
+@media screen and (min-width: 768px) {
+  .k-point-b {
+    font-size: 11px;
+  }
+}
+
+.digit {
+  font-family: "digit";
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.k-point {
+  font-size: 15px;
+  color: #dbd41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-hd-bt {
+  position: fixed;
+  right: 12px;
+  top: 40%;
+  z-index: 77;
+}
+.btn-hd-bt img {
+  width: 90px;
+}
+
+.domains {
+  color: #fff;
+  margin: 12px;
+  padding: 24px 12px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(103, 103, 103) 100%);
+  border-radius: 12px;
+}
+.domains .lvc {
+  padding: 4px;
+  background-image: url(imgs/box.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 34px;
+}
+.domains .pbox {
+  color: #dbd41b;
+  margin-top: 12px;
+}
+.domains .pbox a.gnavs {
+  display: flex;
+  height: 100%;
+  border-radius: 7px;
+  background-color: #de6b68;
+  font-size: 11px;
+  margin-left: auto;
+  padding: 11px 6px;
+  margin-left: 12px;
+}
+.domains .pbox:first-child {
+  margin-top: 0;
+}
+.domains .pbox img {
+  width: 25px;
+}
+.domains .ptext {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.ofh {
+  overflow: hidden;
+}
+
+.sheet-title {
+  border-radius: 12px 12px 0 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.inx {
+  margin-bottom: 6px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 0 12px 12px 12px;
+}
+
+.btmain {
+  margin: 0 auto 6px auto;
+  max-width: 550px;
+}
+
+.controls-sheet {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.bottom-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 7777;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+  padding: 0 6px 6px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s;
+}
+.bottom-sheet .hdib {
+  margin: 0 auto;
+  height: 450px;
+  overflow: hidden auto;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  background-color: #fff;
+}
+.bottom-sheet .img-hd {
+  max-width: 400px;
+  width: 100%;
+}
+
+[button] {
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+}
+
+.hidden {
+  transform: translateY(100%);
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close-hd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 444px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.footerr {
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0 12px;
+  background-color: #090427;
+}
+.footerr .ft-text {
+  color: #dbd41b;
+  line-height: 1.4;
+}
+.footerr .telegr {
+  margin-top: 24px;
+}
+.footerr .telegr .tlt {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.footerr .telegr .tlt-url {
+  margin-left: 12px;
+  color: red;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
